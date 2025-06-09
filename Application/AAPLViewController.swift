@@ -27,8 +27,7 @@ class AAPLViewController: PlatformViewController {
         mtkView.device = MTLCreateSystemDefaultDevice()
         
         assert(mtkView.device != nil, "Metal is not supported on this device")
-        
-        renderer = AAPLRenderer(mtkView: mtkView)
+        renderer = AAPLRenderer(metalKitView: mtkView)
         
         assert(renderer != nil, "Metal is not supported on this device")
         

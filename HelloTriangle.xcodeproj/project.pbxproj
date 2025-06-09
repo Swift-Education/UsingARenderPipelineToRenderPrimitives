@@ -23,6 +23,9 @@
 		63E77A181ED2059A00E1E542 /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532871E99974500C194AD /* AAPLShaders.metal */; };
 		63E77A191ED2059E00E1E542 /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532871E99974500C194AD /* AAPLShaders.metal */; };
 		63E77A1A1ED205A200E1E542 /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3A3532871E99974500C194AD /* AAPLShaders.metal */; };
+		B5E222062DF68C550036AF09 /* AAPLSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E222052DF68C550036AF09 /* AAPLSceneDelegate.swift */; };
+		B5E222072DF68C550036AF09 /* AAPLSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E222052DF68C550036AF09 /* AAPLSceneDelegate.swift */; };
+		B5E222082DF68C550036AF09 /* AAPLSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E222052DF68C550036AF09 /* AAPLSceneDelegate.swift */; };
 		B5E3C12B2DDCBE40000622FD /* AAPLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD21341EAE60D2000D1DED /* AAPLAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,7 @@
 		3ACD21341EAE60D2000D1DED /* AAPLAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPLAppDelegate.swift; sourceTree = "<group>"; };
 		3ED283CC1EC2C6D200A23F58 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		907FE32A28789CDAFD777257 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		B5E222052DF68C550036AF09 /* AAPLSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAPLSceneDelegate.swift; sourceTree = "<group>"; };
 		B5E3C12A2DDCBA12000622FD /* HelloTriangle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloTriangle-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +148,7 @@
 		3A3532911E99974500C194AD /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				B5E222052DF68C550036AF09 /* AAPLSceneDelegate.swift */,
 				3ACD21341EAE60D2000D1DED /* AAPLAppDelegate.swift */,
 				3A35329C1E99974500C194AD /* AAPLViewController.swift */,
 				3A3532931E99974500C194AD /* main.swift */,
@@ -311,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E222082DF68C550036AF09 /* AAPLSceneDelegate.swift in Sources */,
 				B5E3C12B2DDCBE40000622FD /* AAPLAppDelegate.swift in Sources */,
 				63E77A181ED2059A00E1E542 /* AAPLShaders.metal in Sources */,
 				3A35329D1E99974500C194AD /* AAPLViewController.swift in Sources */,
@@ -322,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E222062DF68C550036AF09 /* AAPLSceneDelegate.swift in Sources */,
 				63E77A191ED2059E00E1E542 /* AAPLShaders.metal in Sources */,
 				3A3532CF1E99974500C194AD /* AAPLRenderer.m in Sources */,
 				3A1F1B391F033765001622B3 /* AAPLViewController.swift in Sources */,
@@ -336,6 +343,7 @@
 				3A1F1B3D1F033827001622B3 /* AAPLViewController.swift in Sources */,
 				63E77A1A1ED205A200E1E542 /* AAPLShaders.metal in Sources */,
 				3A3532D01E99974500C194AD /* AAPLRenderer.m in Sources */,
+				B5E222072DF68C550036AF09 /* AAPLSceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +499,7 @@
 			baseConfigurationReference = 907FE32A28789CDAFD777257 /* SampleCode.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FL4QTRRKMD;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -513,6 +521,7 @@
 				PRODUCT_NAME = HelloTriangle;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Application/HelloTriangle-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -523,7 +532,7 @@
 			baseConfigurationReference = 907FE32A28789CDAFD777257 /* SampleCode.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FL4QTRRKMD;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,6 +550,7 @@
 				PRODUCT_NAME = HelloTriangle;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Application/HelloTriangle-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
